@@ -253,6 +253,33 @@
     padding: 5px 10px;
   }
 
+  /* ---------- PROOF RECORD BLOCK ---------- */
+  .proof-block {
+    margin-bottom: 18px;
+    padding: 14px;
+    background: var(--panel-2);
+    border: 1px dashed var(--line);
+    border-radius: 4px;
+  }
+  .proof-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .proof-img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    display: block;
+  }
+
   /* ---------- FOOTER ---------- */
 
   footer{
@@ -317,7 +344,7 @@
   <main>
 
     <section class="panel">
-      <div class="panel-tag"><span>Profile</span></div>
+      <div class="panel-tag"><span>Introduction</span></div>
       <h2>About Me</h2>
       <div style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap;">
         <!-- Profile Picture Container -->
@@ -332,10 +359,20 @@
 
     <section class="panel">
       <div class="panel-tag">
-        <span>Log // ST Engineering Aerospace</span>
-        <span class="date">Apr 2026 – Aug 2026</span>
+        <span>Professional Experience</span>
+        <span class="date">Apr 2026 – Sep 2026</span>
       </div>
       <h2>Data Engineering Intern, UAS Division</h2>
+      
+      <!-- PLACEMENT RECORD BLOCK -->
+      <div class="proof-block">
+        <div class="proof-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          Official Placement Verification
+        </div>
+        <img src="ite-internship.png" alt="ITE Internship Verification" class="proof-img">
+      </div>
+
       <p>I am part of a computer vision project within the Unmanned Air Systems division under the Data Analytics Group. My ongoing engineering contributions and tasks include:</p>
       <ul>
         <li><b>Data Annotation</b> — I use CVAT to accurately annotate drone blades, vehicle license plates, and kayaks in Singapore's reservoirs to supply critical inputs for training AI detection models (such as ResNet configurations).</li>
@@ -347,7 +384,7 @@
 
     <section class="panel">
       <div class="panel-tag">
-        <span>Log // Swim Masters</span>
+        <span>Operations Management</span>
         <span class="date">Apr 2026 – On Pause</span>
       </div>
       <h2>Swimming Coach &amp; Administrator</h2>
@@ -356,24 +393,24 @@
     </section>
 
     <section class="panel">
-      <div class="panel-tag"><span>Log // ITE College West</span></div>
+      <div class="panel-tag"><span>Leadership</span></div>
       <h2>Class Chairperson</h2>
       <p>I act as the main point of contact between my classmates and lecturers/school administration — coordinating class activities, managing differing priorities, and taking initiative when issues come up within the class.</p>
     </section>
 
     <section class="panel">
-      <div class="panel-tag"><span>Log // Hardware &amp; Custom Infrastructure</span></div>
+      <div class="panel-tag"><span>Technical Projects</span></div>
       <h2>Practical Technical Builds &amp; Logic Projects</h2>
       <p>Outside of standard classroom curriculum, I actively direct my time toward hands-on technology builds, complex hardware assembly, and low-level firmware architecture:</p>
       <ul>
-        <li><b>Custom PC Engineering</b> — I researched, sourced, and self-built a high-performance computer system from scratch. I spent weeks comparing hardware metrics, validating architectural constraints, and optimizing component pairings—integrating components like an RTX 4060Ti graphics engine and high-frequency DDR5 6000MHz RAM modules to study physical system integration firsthand.</li>
+        <li><b>Custom PC Engineering</b> — I researched, sourced, and self-built a high-performance computer system from scratch. I spent weeks comparing hardware metrics, validating architectural constraints, and optimizing component pairings—integrating components like an AMD Ryzen 7 7800X3D processing unit alongside a high-performance MSI GeForce RTX 5070 12GB GPU to build balanced hardware pathways.</li>
         <li><b>Hardware Disassembly &amp; Console Modding</b> — I executed complex physical disassemblies and custom firmware system overhauls on Nintendo 3DS and Nintendo Switch platforms. This involved handling delicate interior components, replacing internal physical parts, and safely flashing base operating systems by reading highly detailed technical manuals to mitigate hardware bricking risks.</li>
         <li><b>Early Applied Automation</b> — I established my foundational interest in automation and system mechanics through early primary school robotics work, configuring structured loops and building initial mechanical frames.</li>
       </ul>
     </section>
 
     <section class="panel">
-      <div class="panel-tag"><span>Sys // Core Skills</span></div>
+      <div class="panel-tag"><span>Technical Skills</span></div>
       <h2>Technical Capabilities</h2>
 
       <div class="skill-group">
@@ -410,7 +447,6 @@
 
   <footer class="mono">
     <span>Leroy Lim — Portfolio Record</span>
-    <span>Applicant EAE Track</span>
   </footer>
 
 </div>
