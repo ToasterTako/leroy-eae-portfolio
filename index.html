@@ -25,6 +25,25 @@
       border-bottom: 1px dashed #374151;
       padding-bottom: 20px;
       margin-bottom: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .header-main {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+    .profile-photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 2px solid #38bdf8;
+      object-fit: cover;
+      background-color: #1e293b;
+    }
+    .header-text {
+      flex: 1;
     }
     h1 {
       color: #38bdf8;
@@ -41,7 +60,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 15px;
-      margin-top: 20px;
+      margin-top: 10px;
     }
     .status-card {
       border: 1px solid #1f2937;
@@ -168,7 +187,11 @@
       font-size: 0.8rem;
       color: #4b5563;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 680px) {
+      .header-main {
+        flex-direction: column;
+        align-items: flex-start;
+      }
       .status-grid, .skills-grid {
         grid-template-columns: 1fr;
       }
@@ -179,9 +202,16 @@
 
 <div class="container">
   <header>
-    <h1>Leroy Lim</h1>
-    <div class="intro-text">
-      Higher NITEC in Data Engineering graduate from ITE College West. Currently expanding technical frameworks as a Data Engineering Intern with the Data Analytics Group at ST Engineering Aerospace.
+    <div class="header-main">
+      <!-- 📸 Replace profile.jpg with your exact photo file name if different -->
+      <img src="profile.jpg" alt="Leroy Lim" class="profile-photo" onerror="this.style.display='none'">
+      
+      <div class="header-text">
+        <h1>Leroy Lim</h1>
+        <div class="intro-text">
+          Higher NITEC in Data Engineering graduate from ITE College West. Currently expanding technical frameworks as a Data Engineering Intern with the Data Analytics Group at ST Engineering Aerospace.
+        </div>
+      </div>
     </div>
     
     <div class="status-grid">
